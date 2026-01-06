@@ -42,6 +42,13 @@ JSON_FILE = "JNQuiz2025.json"
 with open(JSON_FILE, "r", encoding="utf-8") as f:
     questions = json.load(f)
 
+# Преобразуем dict → list, если нужно
+if isinstance(questions, dict):
+    questions = list(questions.values())
+
+print(f"📚 Loaded {len(questions)} questions")
+
+
 state = {"index": 0}
 
 # -----------------------------
