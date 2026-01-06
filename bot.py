@@ -22,6 +22,12 @@ questions = data["questions"]
 state = {"index": 0}
 
 async def send_quiz(context: ContextTypes.DEFAULT_TYPE, q):
+
+    # 🔍 DEBUG: print question and option lengths
+    print("QUESTION:", q["question"])
+    for key, value in q["options"].items():
+        print(f"OPTION {key} LENGTH:", len(value))
+
     options = list(q["options"].values())
     correct_letter = q["correct"]
     correct_index = list(q["options"].keys()).index(correct_letter)
@@ -34,6 +40,7 @@ async def send_quiz(context: ContextTypes.DEFAULT_TYPE, q):
         correct_option_id=correct_index,
         explanation=q["explanation"]
     )
+
 
 async def next_question(update: Update, context: ContextTypes.DEFAULT_TYPE):
     q = questions[state["index"]]
