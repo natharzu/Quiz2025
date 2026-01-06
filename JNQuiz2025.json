@@ -1,0 +1,849 @@
+{
+  "meta": {
+    "title": "Jakob Nielsen Quiz 2025",
+    "count": 70,
+    "version": "1.0"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "In the context of “Slow AI“ (tasks taking hours or days), what is the primary function of a “Return Recap” or “Resumption Summary”?",
+      "options": {
+        "A": "To provide a log of technical errors for debugging purposes.",
+        "B": "To force the user to restart the task if they have been away for too long.",
+        "C": "To help the user reconstruct their mental model and context by summarizing the original intent, key decisions made, and current status.",
+        "D": "To display a simple progress bar indicating the percentage of completion."
+      },
+      "correct": "C",
+      "explanation": "Return Recap восстанавливает контекст: цель, ключевые решения и текущий статус."
+    },
+    {
+      "id": 2,
+      "question": "In AI-driven interfaces, teams sometimes run an A/B test, collect plenty of traffic, and still can’t get a stable winner. What is the most common underlying reason?",
+      "options": {
+        "A": "Users get “novelty bias” from any new UI, so the B variant always wins for the first week.",
+        "B": "The model’s probabilistic outputs inject extra variance into outcomes, so measured deltas can swing even when the UI change is real.",
+        "C": "A/B tests are impossible with AI because AI systems cannot log user behavior events.",
+        "D": "Quantitative studies cannot reach statistical significance because AI products have too few users."
+      },
+      "correct": "B",
+      "explanation": "Стохастичность модели добавляет вариативность, из-за чего метрики «плавают»."
+    },
+    {
+      "id": 3,
+      "question": "Recent research on human-AI collaboration identifies a “Trough of Mediocrity” where adding a human to the loop degrades performance. In which type of task is this negative value most likely to occur?",
+      "options": {
+        "A": "Creative ideation and divergent thinking tasks where novelty is the goal.",
+        "B": "Analytical decision-making tasks with a single correct answer, such as medical diagnosis or forecasting.",
+        "C": "Ethical reasoning tasks requiring empathy and cultural context.",
+        "D": "Strategic planning tasks involving long-term goal setting and ambiguity."
+      },
+      "correct": "B",
+      "explanation": "В задачах с единственным правильным ответом человек часто ухудшает результат модели."
+    },
+    {
+      "id": 4,
+      "question": "According to the “Genii Shift” economic theory, what is the long-term impact of Transformative AI (TAI) on “routine” knowledge workers?",
+      "options": {
+        "A": "They will be displaced as AI becomes capable of applying existing knowledge faster and cheaper, even in edge cases.",
+        "B": "Their wages will increase significantly as they become the primary operators of AI tools.",
+        "C": "They will move into manual labor roles that robotics cannot yet automate.",
+        "D": "They will retain their roles but work fewer hours, as AI handles only the “genius” level tasks."
+      },
+      "correct": "A",
+      "explanation": "TAI автоматизирует рутинные знания быстрее всего."
+    },
+    {
+      "id": 5,
+      "question": "In the “12 Steps for Usability Testing,” what defines a strong problem statement during the definition phase?",
+      "options": {
+        "A": "It must be solution-free, describing the user’s struggle without prescribing a specific fix or feature.",
+        "B": "It must strictly align with the company’s immediate revenue targets for the quarter.",
+        "C": "It must effectively outline the technical specifications required to build the feature.",
+        "D": "It must specify ways to determine which of the UX team’s main competing design ideas is best in testing."
+      },
+      "correct": "A",
+      "explanation": "Проблемное заявление должно быть solution-free."
+    },
+    {
+      "id": 6,
+      "question": "What is the “Third Scaling Law“ of AI, and how does it differ from pre-training scaling?",
+      "options": {
+        "A": "It involves scaling the number of human annotators to improve reinforcement learning.",
+        "B": "It involves scaling test-time compute (reasoning), where the model improves results by “thinking” longer during inference rather than just training on more data.",
+        "C": "It involves scaling the physical size of data centers to accommodate larger context windows.",
+        "D": "It involves scaling the diversity of synthetic data to prevent model collapse."
+      },
+      "correct": "B",
+      "explanation": "Third Scaling Law — увеличение вычислений на этапе инференса, а не только обучение."
+    },
+    {
+      "id": 7,
+      "question": "Why is Apple’s “Liquid Glass“ UI style criticized from a usability perspective?",
+      "options": {
+        "A": "It relies too heavily on skeuomorphism, which feels outdated to modern users.",
+        "B": "It uses low-contrast text and translucent backgrounds that compromise readability and increase cognitive load.",
+        "C": "It eliminates animations, making the interface feel static and unresponsive.",
+        "D": "It forces users to use voice commands instead of touch interactions."
+      },
+      "correct": "B",
+      "explanation": "Liquid Glass критикуют за низкий контраст и прозрачность, ухудшающие читаемость."
+    },
+    {
+      "id": 8,
+      "question": "What is the primary goal of “Generative Engine Optimization“ (GEO)?",
+      "options": {
+        "A": "To increase the number of backlinks from high-authority domains to improve Google rankings.",
+        "B": "To optimize content so that it is synthesized and cited by AI answer engines (like ChatGPT or Perplexity), rather than just ranking for keywords.",
+        "C": "To reduce the server load required to host a website by compressing images.",
+        "D": "To ensure that all content on a website is generated by AI to match the tone of search queries."
+      },
+      "correct": "B",
+      "explanation": "GEO оптимизирует контент под генеративные ответные системы, а не под ключевые слова."
+    },
+    {
+      "id": 9,
+      "question": "Which three skills are identified as the critical “human” career skills for the AI era, replacing technical craft skills?",
+      "options": {
+        "A": "Python programming, prompt engineering, and visual design.",
+        "B": "Data analysis, project management, and copywriting.",
+        "C": "Empathy, creativity, and manual dexterity.",
+        "D": "Agency, judgment, and persuasion."
+      },
+      "correct": "D",
+      "explanation": "Nielsen выделяет три ключевых навыка: agency, judgment, persuasion."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the “Study Similarity Score“ (3S) in user research?",
+      "options": {
+        "A": "To measure how similar two different AI models are in their output quality.",
+        "B": "To assess the relevance of secondary research findings to a current project based on user match, task match, and context match.",
+        "C": "To calculate the statistical significance of A/B test results.",
+        "D": "To determine if a participant in a usability test fits the target persona."
+      },
+      "correct": "B",
+      "explanation": "3S оценивает релевантность вторичных исследований по пользователю, задаче и контексту."
+    },
+    {
+      "id": 11,
+      "question": "Research on “AI Stigma“ in healthcare revealed which paradoxical finding regarding patient perception?",
+      "options": {
+        "A": "Patients always prefer advice labeled as coming from a human, even if the advice is factually incorrect.",
+        "B": "Advice labeled as coming from an AI was rated less reliable and empathetic, even when it was identical to advice labeled as coming from a human.",
+        "C": "Patients rated AI chatbots as having zero empathy compared to human doctors in all scenarios.",
+        "D": "Patients could perfectly distinguish between human-written and AI-written medical advice 100% of the time."
+      },
+      "correct": "B",
+      "explanation": "Идентичный текст воспринимается хуже, если он помечен как AI — снижается доверие и ощущение эмпатии."
+    },
+    {
+      "id": 12,
+      "question": "In the “12 Steps for Usability Testing,” why is it recommended to create a “scope document” that explicitly lists what is out of scope?",
+      "options": {
+        "A": "To prevent stakeholders from seeing features that are not yet ready for testing.",
+        "B": "To protect the project timeline from “scope creep” and manage stakeholder expectations about what the study will and won’t cover.",
+        "C": "To ensure that the test participants do not wander into unfinished parts of the prototype.",
+        "D": "To provide a legal defense in case the product fails to meet accessibility standards."
+      },
+      "correct": "B",
+      "explanation": "Scope document защищает от scope creep и управляет ожиданиями о том, что входит и не входит в исследование."
+    },
+    {
+      "id": 13,
+      "question": "What is the primary difference between an “AI-First Company“ and an “AI-Native Company”?",
+      "options": {
+        "A": "AI-First companies build their own foundation models, while AI-Native companies use APIs.",
+        "B": "AI-Native companies are startups built from scratch with AI at the core, while AI-First companies are legacy firms retrofitting AI into existing structures.",
+        "C": "AI-First companies use AI for customer-facing products only, while AI-Native companies use it for internal operations.",
+        "D": "AI-Native companies require all employees to know Python, whereas AI-First companies rely on no-code tools."
+      },
+      "correct": "B",
+      "explanation": "AI-Native создаются с нуля вокруг AI; AI-First — старые компании, внедряющие AI поверх существующих процессов."
+    },
+    {
+      "id": 14,
+      "question": "In the context of AI-generated content, what is the “AI Sandwich” workflow?",
+      "options": {
+        "A": "Using AI to generate the beginning and end of a video, while a human animates the middle.",
+        "B": "A human provides the creative spark (top slice), AI generates volume/variations (filling), and a human curates/refines the result (bottom slice).",
+        "C": "An AI generates a prompt, a human writes the code, and the AI tests the code.",
+        "D": "Stacking multiple AI models (e.g., text, image, video) to create a single multimedia asset."
+      },
+      "correct": "B",
+      "explanation": "AI Sandwich: человек → AI → человек. Человек задаёт направление, AI генерирует объём, человек редактирует."
+    },
+    {
+      "id": 15,
+      "question": "Why is “Prompt Engineering” predicted to become an obsolete career path?",
+      "options": {
+        "A": "Because AI models are becoming less capable of understanding natural language, requiring coding instead.",
+        "B": "Because companies are refusing to pay for prompt engineers due to budget cuts.",
+        "C": "Because as AI models improve, they better understand natural language intent, reducing the need for arcane syntax manipulation.",
+        "D": "Because prompt engineering is illegal under the new EU AI Act."
+      },
+      "correct": "C",
+      "explanation": "Модели всё лучше понимают естественный язык, поэтому «магические» промпты становятся ненужными."
+    },
+    {
+      "id": 16,
+      "question": "What is the “Coasean Singularity” in relation to the structure of the firm?",
+      "options": {
+        "A": "The point where AI becomes self-aware and takes over corporate governance.",
+        "B": "The theory that AI agents will reduce external transaction costs to near zero, making it efficient for firms to shrink and outsource most tasks to the market.",
+        "C": "The moment when a company’s internal communication becomes instantaneous due to AI.",
+        "D": "The consolidation of all global commerce into a single AI-run conglomerate."
+      },
+      "correct": "B",
+      "explanation": "AI снижает транзакционные издержки → фирмам выгоднее становиться маленькими и аутсорсить всё."
+    },
+    {
+      "id": 17,
+      "question": "In “Slow AI“ design, what is the purpose of “Conceptual Breadcrumbs”?",
+      "options": {
+        "A": "To show the user the file path of the documents being analyzed.",
+        "B": "To provide synthesized summaries of insights or intermediate conclusions during a long run, building trust in the AI’s reasoning.",
+        "C": "To allow the user to navigate back to the home screen.",
+        "D": "To leave a trail of data for debugging purposes in case the AI crashes."
+      },
+      "correct": "B",
+      "explanation": "Conceptual Breadcrumbs — промежуточные выводы, показывающие ход рассуждений AI."
+    },
+    {
+      "id": 18,
+      "question": "What does the “Usability Scaling Law“ predict will happen to user testing by 2035?",
+      "options": {
+        "A": "User testing will increase in frequency as AI makes it cheaper to recruit participants.",
+        "B": "Usability prediction by AI will surpass observational user testing for many common design tasks, reducing the need for empirical studies.",
+        "C": "User testing will be conducted exclusively by robots on human subjects.",
+        "D": "The need for usability testing will disappear entirely because AI will design perfect interfaces instantly."
+      },
+      "correct": "B",
+      "explanation": "AI‑предсказания юзабилити превзойдут наблюдательные тесты для многих типовых задач."
+    },
+    {
+      "id": 19,
+      "question": "In the context of “Vibe Coding,” what role does the human primarily play?",
+      "options": {
+        "A": "Writing optimized Python code to ensure efficiency.",
+        "B": "Debugging the AI’s output line-by-line.",
+        "C": "Specifying the high-level intent (what the software should do) while the AI handles the implementation (how to do it).",
+        "D": "Designing the visual icons for the application."
+      },
+      "correct": "C",
+      "explanation": "В vibe coding человек задаёт намерение (что), AI реализует (как)."
+    },
+    {
+      "id": 20,
+      "question": "How does the “Articulation Barrier“ hinder AI adoption?",
+      "options": {
+        "A": "Users cannot speak clearly enough for voice recognition systems to understand them.",
+        "B": "Users struggle to translate their abstract needs into the precise prose required to get the desired result from an AI.",
+        "C": "AI models cannot articulate their reasoning processes to humans.",
+        "D": "The cost of AI subscriptions is too high for the average user to articulate a business case."
+      },
+      "correct": "B",
+      "explanation": "Людям сложно формулировать свои потребности достаточно точно, чтобы AI дал нужный результат."
+    },
+    {
+      "id": 21,
+      "question": "What is the “Drone War” concept regarding the information ecosystem?",
+      "options": {
+        "A": "The conflict between AI generating untruthful information and AI used to screen/detect that misinformation.",
+        "B": "The use of physical drones to deliver data storage devices.",
+        "C": "The competition between different AI companies to launch their products first.",
+        "D": "The legal battle over who owns the copyright to AI-generated content."
+      },
+      "correct": "A",
+      "explanation": "“Drone War” — это борьба между AI, генерирующим дезинформацию, и AI, который пытается её обнаруживать и фильтровать."
+    },
+    {
+      "id": 22,
+      "question": "Why does the “Hamburger Menu” often fail on desktop interfaces?",
+      "options": {
+        "A": "It violates the “Visibility of system status” heuristic by hiding core navigation options, increasing interaction cost and lowering discoverability.",
+        "B": "It takes up too much screen real estate compared to a text menu.",
+        "C": "Users confuse it with a literal food ordering button.",
+        "D": "It is technically difficult to implement on desktop browsers."
+      },
+      "correct": "A",
+      "explanation": "Гамбургер скрывает навигацию, повышает interaction cost и снижает discoverability."
+    },
+    {
+      "id": 23,
+      "question": "What is the “Boredom Problem” associated with the oversight of highly autonomous AI systems in AI-First companies?",
+      "options": {
+        "A": "Employees become bored because the AI does all the creative work, leaving humans with only data entry tasks.",
+        "B": "AI agents eventually produce repetitive, unoriginal outputs because they are trained on a fixed dataset.",
+        "C": "Humans are notoriously poor at vigilance tasks; as AI reliability increases, operators become complacent and inattentive, reducing their ability to intervene effectively during rare failures.",
+        "D": "Customers get bored interacting with AI agents that lack a distinct personality or sense of humor."
+      },
+      "correct": "C",
+      "explanation": "Чем надёжнее AI, тем хуже человек справляется с редкими сбоями из-за потери бдительности."
+    },
+    {
+      "id": 24,
+      "question": "In Google’s user testing of “Generative UI,” why did users prefer the AI-generated interface over traditional websites 90% of the time?",
+      "options": {
+        "A": "The AI interface used more colorful graphics and animations, which users found more entertaining.",
+        "B": "The AI acted as an “interaction synthesizer,” stripping away the navigation tax of menus and scrolling to present only the components relevant to the immediate user intent.",
+        "C": "The AI interface was faster to load because it stripped out all images and CSS.",
+        "D": "The AI interface mimicked the exact layout of the user’s favorite social media app, reducing the learning curve."
+      },
+      "correct": "B",
+      "explanation": "Generative UI убирает навигационный налог и показывает только релевантные элементы."
+    },
+    {
+      "id": 25,
+      "question": "What is the specific role of a “Forward Deployed Engineer” (FDE) in the context of UX discovery research for AI startups?",
+      "options": {
+        "A": "To maintain the server infrastructure at the client site to ensure low latency for AI models.",
+        "B": "To act as a salesperson who is technically literate enough to explain the AI’s capabilities to the client’s CTO.",
+        "C": "To embed at the customer site, observe workflows, and build simplified prototypes to solve specific problems, which are later generalized into robust products.",
+        "D": "To train the client’s employees on how to write Python code so they can maintain the AI software themselves."
+      },
+      "correct": "C",
+      "explanation": "FDE внедряется к клиенту, изучает реальные процессы и делает быстрые прототипы."
+    },
+    {
+      "id": 26,
+      "question": "How does “Performative Privacy” differ from “Practical Privacy” in user interface design?",
+      "options": {
+        "A": "Performative privacy involves actual data encryption, while practical privacy relies on user trust.",
+        "B": "Performative privacy refers to interfaces like cookie banners that create an appearance of control but often degrade usability without offering real protection, whereas practical privacy involves preventing actual data misuse.",
+        "C": "Performative privacy is legal compliance, whereas practical privacy is optional.",
+        "D": "Performative privacy hides data from the user, while practical privacy hides data from the company."
+      },
+      "correct": "B",
+      "explanation": "Performative privacy создаёт иллюзию контроля (cookie‑баннеры), practical privacy — реальная защита данных."
+    },
+    {
+      "id": 27,
+      "question": "When designing for “Active Creation” with AI tools, which metric should replace “Time on Site” as a measure of success?",
+      "options": {
+        "A": "Time to Fulfillment: The duration between a user forming an intent to create and achieving a satisfying output.",
+        "B": "Clicks per Session: The total number of interactions a user has with the tool.",
+        "C": "Ad Impressions: The number of advertisements the user sees while creating.",
+        "D": "Scroll Depth: How far down the page the user navigates."
+      },
+      "correct": "A",
+      "explanation": "Главная метрика — скорость достижения удовлетворяющего результата: Time to Fulfillment."
+    },
+    {
+      "id": 28,
+      "question": "How is the “Pancaking” of organizations expected to impact the career path of senior UX professionals?",
+      "options": {
+        "A": "It will create more middle-management layers, offering more opportunities for promotion to “Director” and “VP” titles.",
+        "B": "It will eliminate the need for senior roles entirely, as junior staff using AI will be sufficient.",
+        "C": "It will flatten hierarchies, making traditional management ladders obsolete and requiring seniors to contribute as high-level individual contributors who own the design vision directly.",
+        "D": "It will force all designers to become full-stack developers."
+      },
+      "correct": "C",
+      "explanation": "Pancaking уплощает структуры → меньше менеджеров, больше senior‑IC, владеющих видением."
+    },
+    {
+      "id": 29,
+      "question": "In the debate over “Sovereign AI,” what argument supports the idea of AI as “cultural infrastructure”?",
+      "options": {
+        "A": "AI models are purely mathematical and therefore culturally neutral, so sourcing them globally is most efficient.",
+        "B": "Every nation needs to manufacture its own GPU chips to ensure economic independence.",
+        "C": "AI systems inevitably reflect the values of their creators; therefore, nations need their own models to preserve local values, culture, and language, preventing digital colonialization.",
+        "D": "Sovereign AI is necessary because international internet cables cannot handle the bandwidth required for cloud computing."
+      },
+      "correct": "C",
+      "explanation": "AI отражает ценности создателей → странам нужны свои модели, чтобы избежать цифровой колонизации."
+    },
+    {
+      "id": 30,
+      "question": "What is the phenomenon of “Shadow AI” or “Secret Cyborgs” in the workplace?",
+      "options": {
+        "A": "AI agents that run in the background without any human supervision.",
+        "B": "Hackers using AI to infiltrate corporate networks.",
+        "C": "Employees using AI tools to do their jobs more efficiently, but hiding this usage from their bosses and colleagues due to fear of stigma or obsolescence.",
+        "D": "Robots that are designed to look indistinguishable from humans."
+      },
+      "correct": "C",
+      "explanation": "Shadow AI — сотрудники скрывают использование AI, чтобы не выглядеть заменяемыми."
+    },
+    {
+      "id": 31,
+      "question": "What distinguishes a “Utilitarian” (Successful) metaphor from an “Ideological” (Failed) metaphor in UI design?",
+      "options": {
+        "A": "Utilitarian metaphors focus on visual realism (e.g., wood grain), while Ideological metaphors use abstract icons.",
+        "B": "Utilitarian metaphors prioritize user goals and discard limiting constraints of the source object (e.g., folders inside folders), while Ideological metaphors prioritize the cleverness of the simulation (e.g., walking across a room).",
+        "C": "Utilitarian metaphors are based on office supplies, while Ideological metaphors are based on architecture.",
+        "D": "Utilitarian metaphors are used for consumer apps, while Ideological metaphors are used for enterprise software."
+      },
+      "correct": "B",
+      "explanation": "Успешные метафоры помогают пользователю достигать цели и не копируют ограничения реального объекта; провальные симулируют реальность ради самой симуляции."
+    },
+    {
+      "id": 32,
+      "question": "In the context of AI-generated visualizations, what is the concept of “Chart Pull” (as opposed to “Chart Junk”)?",
+      "options": {
+        "A": "The ability of AI to pull data from Excel spreadsheets automatically.",
+        "B": "The idea that attractive, even if somewhat decorative, visualizations attract users and incite them to engage with information that they would ignore if presented as a wall of text.",
+        "C": "The tendency of AI to hallucinate incorrect data points on a chart.",
+        "D": "The practice of removing all gridlines and labels from a chart to make it look cleaner."
+      },
+      "correct": "B",
+      "explanation": "Chart Pull — визуальная привлекательность, которая втягивает пользователя в данные, даже если график слегка декоративен."
+    },
+    {
+      "id": 33,
+      "question": "In the context of “User-Driven Design“ enabled by vibe coding, how does the economic logic of design errors shift compared to traditional software development?",
+      "options": {
+        "A": "The focus shifts from “Correction” to “Prevention” because AI-generated errors are harder to debug.",
+        "B": "The focus shifts from “Prevention” to “Correction” because the cost of fixing an error drops to near zero, making it more efficient to fix mistakes after detection than to prevent them perfectly.",
+        "C": "The focus remains on “Prevention” because user tolerance for bugs decreases as software becomes more abundant.",
+        "D": "The focus shifts to “Litigation” as liability for software errors becomes unclear."
+      },
+      "correct": "B",
+      "explanation": "Стоимость исправления ошибок ≈ 0, поэтому выгоднее исправлять после обнаружения, а не предотвращать заранее."
+    },
+    {
+      "id": 34,
+      "question": "Analysis of the Hugging Face Hallucination Leaderboard suggests that AI hallucination rates follow a specific scaling law. What is the observed relationship?",
+      "options": {
+        "A": "Hallucinations increase as models get larger because they have more “facts” to confuse.",
+        "B": "Hallucinations remain constant regardless of model size; they are only reduced by RLHF.",
+        "C": "Hallucinations drop by approximately 3 percentage points for every 10x increase in the model’s parameter count.",
+        "D": "Hallucinations drop linearly with the amount of electricity consumed during training."
+      },
+      "correct": "C",
+      "explanation": "Каждые 10× параметров уменьшают галлюцинации примерно на 3 процентных пункта."
+    },
+    {
+      "id": 35,
+      "question": "What was the primary finding of the “GDPval” benchmark released by OpenAI, which compares AI performance to human experts on economically valuable tasks?",
+      "options": {
+        "A": "AI completely outperformed humans in all categories, rendering human experts obsolete.",
+        "B": "Humans still won the majority of tasks (roughly 52–61%), but AI performance is rapidly improving and costs only about 1% of the human equivalent.",
+        "C": "AI performed poorly on all tasks, proving it is not yet ready for economic integration.",
+        "D": "AI and humans performed exactly the same, but AI was slower."
+      },
+      "correct": "B",
+      "explanation": "Люди пока выигрывают большинство задач, но AI быстро догоняет и стоит ~1% стоимости человека."
+    },
+    {
+      "id": 36,
+      "question": "In the context of AI-driven education, how does the impact on student learning differ when AI is used as a “Coworker” versus a “Coach”?",
+      "options": {
+        "A": "Using AI as a “Coworker” accelerates learning by showing perfect examples.",
+        "B": "Using AI as a “Coworker” results in zero learning, whereas using AI as a “Coach” significantly accelerates skill acquisition.",
+        "C": "Both metaphors result in identical learning outcomes.",
+        "D": "Using AI as a “Coach” confuses students."
+      },
+      "correct": "B",
+      "explanation": "Когда AI делает работу за студента, обучение не происходит; когда AI направляет, но не делает — обучение ускоряется."
+    },
+    {
+      "id": 37,
+      "question": "When designing an email newsletter subscription flow, what is the best practice for the “Welcome Email” to maximize engagement?",
+      "options": {
+        "A": "Send it 24 hours later to avoid overwhelming the user.",
+        "B": "Send it immediately and use it to set the tone, deliver incentives, and encourage a next action, leveraging its high open rate.",
+        "C": "Do not send a welcome email.",
+        "D": "Use the welcome email solely to deliver the privacy policy."
+      },
+      "correct": "B",
+      "explanation": "Welcome email нужно отправлять сразу — высокий open rate, установка тона, призыв к действию."
+    },
+    {
+      "id": 38,
+      "question": "In the proposed framework for estimating AI’s rate of progress in UX skills, which type of human behavior is predicted to be the fastest for AI to master and simulate?",
+      "options": {
+        "A": "Detailed interaction behaviors involving complex tools.",
+        "B": "General aesthetic preferences that are largely determined by genetics and evolution.",
+        "C": "Domain-specific workflows in specialized industries.",
+        "D": "Nuanced judgment of severity in heuristic evaluation."
+      },
+      "correct": "B",
+      "explanation": "Эстетические предпочтения — самые быстрые для моделирования: они универсальны и биологически обусловлены."
+    },
+    {
+      "id": 39,
+      "question": "You’re trying to earn citations in an AI answer engine that disproportionately pulls from community discussion rather than polished institutional sources. Which content move best aligns with that observed citation bias?",
+      "options": {
+        "A": "Publish robust community Q&A and discussion surfacing edge cases and practical answers.",
+        "B": "Put explanations into a gated PDF.",
+        "C": "Buy backlinks from high-authority domains.",
+        "D": "Rewrite every page to maximize keyword density."
+      },
+      "correct": "A",
+      "explanation": "AI‑answer‑engines любят форумный стиль: Q&A, edge cases, реальные обсуждения."
+    },
+    {
+      "id": 40,
+      "question": "When designing error messages (Usability Heuristic #9), how should a designer handle a “Vending Machine” style error like “Out of Order”?",
+      "options": {
+        "A": "Leave it as is.",
+        "B": "Rewrite it to be polite and metaphorical.",
+        "C": "Rewrite it to diagnose the problem and offer a solution (e.g., “Cash mechanism full — use card or Machine #2”).",
+        "D": "Hide the error message."
+      },
+      "correct": "C",
+      "explanation": "Хорошее сообщение об ошибке объясняет проблему и предлагает решение."
+    },
+    {
+      "id": 41,
+      "question": "How does the psychological mechanism of “Predictive Processing” support the effectiveness of good UI metaphors?",
+      "options": {
+        "A": "It allows the brain to predict the future stock price of the software company.",
+        "B": "It provides the brain with ready-made “priors” or hypotheses about how the interface will behave, reducing the error signal (surprise) when the system acts in alignment with the metaphor.",
+        "C": "It forces the user to process every pixel on the screen to build a model from scratch.",
+        "D": "It relies on the user’s ability to predict the lottery numbers."
+      },
+      "correct": "B",
+      "explanation": "Predictive Processing снижает неожиданность: метафора даёт мозгу готовые ожидания о поведении интерфейса."
+    },
+    {
+      "id": 42,
+      "question": "What is the concept of “Disposable UI” in the context of Generative UI?",
+      "options": {
+        "A": "Interfaces that are deleted from the server after 24 hours.",
+        "B": "Interfaces that are cheaply built and expected to crash.",
+        "C": "Interfaces that are generated on-the-fly by AI for a specific, momentary user intent and then discarded, rather than being built to last for years.",
+        "D": "Physical hardware interfaces made of biodegradable materials."
+      },
+      "correct": "C",
+      "explanation": "Disposable UI — интерфейсы, которые AI генерирует под конкретное намерение и затем удаляет."
+    },
+    {
+      "id": 43,
+      "question": "Which “Prompt Augmentation“ design pattern allows users to construct complex prompts by selecting pre-built components from menus (e.g., camera angles, lighting styles) rather than typing everything?",
+      "options": {
+        "A": "Prompt Rewrite.",
+        "B": "Negative Prompting.",
+        "C": "Prompt Builders.",
+        "D": "Reverse Prompting."
+      },
+      "correct": "C",
+      "explanation": "Prompt Builders позволяют собирать промпт из готовых элементов."
+    },
+    {
+      "id": 44,
+      "question": "A marketing team wants to optimize separate pages for Top/Middle/Bottom funnel the way they did in classic SEO. In an AI answer-engine world, why does that approach often underperform?",
+      "options": {
+        "A": "AI agents effectively traverse the whole journey in one sweep and cite sources that demonstrate broad authority across the topic cluster, not just one stage.",
+        "B": "AI answer engines can only read one page per domain.",
+        "C": "Regulations require consolidating all funnel content onto a single landing page.",
+        "D": "Users no longer research and only buy impulsively."
+      },
+      "correct": "A",
+      "explanation": "AI‑answer‑engines предпочитают источники с широкой тематической авторитетностью, а не отдельные страницы под этапы воронки."
+    },
+    {
+      "id": 45,
+      "question": "What is the “Measurement Gap” identified by economists regarding Transformative AI (TAI)?",
+      "options": {
+        "A": "The inability of AI to measure physical distances accurately.",
+        "B": "The failure of GDP to capture the value of TAI because many AI services are zero-price and improve quality in intangible ways.",
+        "C": "The time lag between training and deployment.",
+        "D": "The discrepancy between chips produced and chips installed."
+      },
+      "correct": "B",
+      "explanation": "GDP не учитывает zero‑price output и качественные улучшения, поэтому недооценивает вклад TAI."
+    },
+    {
+      "id": 46,
+      "question": "According to the “12 Steps for Usability Testing,” what is the primary purpose of Step 7 (Pilot Testing)?",
+      "options": {
+        "A": "To train the AI model on the new interface.",
+        "B": "To gather preliminary quantitative data.",
+        "C": "To “test the test” — validate the script, tasks, and tech setup so the main study runs smoothly.",
+        "D": "To let stakeholders approve the design before users see it."
+      },
+      "correct": "C",
+      "explanation": "Pilot Testing — проверка сценария, задач и техники, а не дизайна."
+    },
+    {
+      "id": 47,
+      "question": "In the psychological mechanics of UI metaphors, what is “Chunking”?",
+      "options": {
+        "A": "Breaking a long webpage into smaller pages.",
+        "B": "A cognitive process that turns a sequence of micro‑actions into a single meaningful unit (e.g., “drag to trash”), reducing working memory load.",
+        "C": "Loading large images in small segments.",
+        "D": "Organizing design teams into small squads."
+      },
+      "correct": "B",
+      "explanation": "Chunking превращает цепочку микро‑действий в одну смысловую единицу, снижая нагрузку на рабочую память."
+    },
+    {
+      "id": 48,
+      "question": "Which “Prompt Augmentation“ design pattern utilizes a hybrid UI with sliders to vary the prompt along specific dimensions (e.g., length, reading level)?",
+      "options": {
+        "A": "Parametrization.",
+        "B": "Reverse Prompting.",
+        "C": "Style Galleries.",
+        "D": "Negative Prompting."
+      },
+      "correct": "A",
+      "explanation": "Parametrization использует UI‑контролы (слайдеры, переключатели) для изменения параметров промпта."
+    },
+    {
+      "id": 49,
+      "question": "What is the specific innovation in the user interaction model of OpenAI’s “Deep Research“ tool compared to standard chatbots?",
+      "options": {
+        "A": "It requires users to write code.",
+        "B": "It only answers exactly what is asked.",
+        "C": "It takes initiative by asking clarifying follow‑up questions before starting the research.",
+        "D": "It delivers results instantly."
+      },
+      "correct": "C",
+      "explanation": "Deep Research инициирует уточняющие вопросы, прежде чем начать работу."
+    },
+    {
+      "id": 50,
+      "question": "In the “Slow AI“ framework for long-running tasks, what is the purpose of “Tiered Notifications”?",
+      "options": {
+        "A": "To charge users different prices based on notification speed.",
+        "B": "To manage attention by distinguishing critical alerts, quality‑improving nudges, and simple completion notices.",
+        "C": "To send an email for every sub‑task.",
+        "D": "To hide errors until the end."
+      },
+      "correct": "B",
+      "explanation": "Tiered Notifications управляют вниманием, разделяя критичные, улучшательные и финальные уведомления."
+    },
+    {
+      "id": 51,
+      "question": "Why is “Breaking the Browser” (specifically the Back button) considered a top UI annoyance?",
+      "options": {
+        "A": "Because it violates a firmly established user expectation and mental model that the Back button will return them to the previous state, causing disorientation and loss of control.",
+        "B": "Because it prevents the browser from updating to the latest security patch.",
+        "C": "Because it makes the website load slower by caching too many previous pages.",
+        "D": "Because it requires users to buy a special mouse with a dedicated Back button."
+      },
+      "correct": "A",
+      "explanation": "Нарушает базовую ментальную модель: Back должен возвращать в предыдущее состояние."
+    },
+    {
+      "id": 52,
+      "question": "According to the “Usability Scaling Law“ theory, what represents the massive “tacit knowledge” bottleneck that must be overcome to train AI for better usability prediction?",
+      "options": {
+        "A": "The high cost of buying hard drives to store usability reports.",
+        "B": "The fact that most usability knowledge is trapped inside the heads of experienced professionals or in unstructured recordings, estimated to be 100x more than what is published in guidelines.",
+        "C": "The refusal of UX designers to write documentation because they prefer sketching.",
+        "D": "The lack of internet connectivity in usability labs."
+      },
+      "correct": "B",
+      "explanation": "Большая часть знаний о юзабилити — в головах экспертов и сырых записях, а не в документах."
+    },
+    {
+      "id": 53,
+      "question": "In the “AI-First Company“ model, what is the role of the “Super-user” compared to the “Auditor”?",
+      "options": {
+        "A": "The Super-user is a customer who buys the most products, while the Auditor checks the finances.",
+        "B": "The Super-user manages the AI hardware, while the Auditor manages the software.",
+        "C": "The Super-user is the AI itself, while the Auditor is the human replacing it.",
+        "D": "The Super-user is a pragmatic tinkerer who refactors workflows and turns messy processes into reliable prompts/policies, while the Auditor is a skeptic who hunts for failure patterns and bias."
+      },
+      "correct": "D",
+      "explanation": "Super-user упрощает процессы и превращает хаос в рабочие политики; Auditor ищет сбои и bias."
+    },
+    {
+      "id": 54,
+      "question": "What concept describes the design leader’s shift in “Founder Mode” regarding Product-Market Fit (PMF)?",
+      "options": {
+        "A": "PMF is irrelevant; the only thing that matters is the CEO’s opinion.",
+        "B": "PMF is redefined internally: the “product” is the design organization’s output, and the “market” is the rest of the company that must accept and use it.",
+        "C": "PMF means finding an external market for the company’s design system to sell it as a SaaS product.",
+        "D": "PMF is achieved solely by lowering the salary of the design team to fit the market rate."
+      },
+      "correct": "B",
+      "explanation": "В Founder Mode продукт = работа дизайн‑команды, рынок = остальная компания."
+    },
+    {
+      "id": 55,
+      "question": "Recently developed AI capabilities allow for “Video-to-Music” transformation. What does this entail?",
+      "options": {
+        "A": "Converting a music video into a text transcript of the lyrics.",
+        "B": "Extracting the audio track from a video file to save storage space.",
+        "C": "Using a video clip as a prompt to generate a music track that matches the video’s mood and action.",
+        "D": "Generating a video of a band playing instruments based on an uploaded MP3 file."
+      },
+      "correct": "C",
+      "explanation": "AI генерирует музыку, соответствующую настроению и динамике видео."
+    },
+    {
+      "id": 56,
+      "question": "What is “Calibrated Trust” in the context of Human-AI collaboration?",
+      "options": {
+        "A": "The user blindly trusts every output from the AI to save time.",
+        "B": "The user refuses to use AI because they do not trust it at all.",
+        "C": "The user trusts the AI’s capabilities enough to use it, but remains vigilant about its limitations, neither rejecting it due to bias nor accepting errors uncritically.",
+        "D": "The system automatically adjusts its output to match the user’s trust level."
+      },
+      "correct": "C",
+      "explanation": "Calibrated Trust = доверять достаточно, но оставаться внимательным к ограничениям."
+    },
+    {
+      "id": 57,
+      "question": "What is the recommended usability best practice for the “Unsubscribe” experience in email newsletters?",
+      "options": {
+        "A": "Require users to log in and navigate through three pages of preferences to find the button.",
+        "B": "Provide a clear “Unsubscribe” link in the footer that works with a single click (or a simple confirmation), and optionally offer an “opt-down” frequency choice.",
+        "C": "Hide the unsubscribe link in white text on a white background to retain subscribers.",
+        "D": "Ask users to call a phone number to process their cancellation request."
+      },
+      "correct": "B",
+      "explanation": "Лучший UX: один клик для отписки + опциональный opt‑down."
+    },
+    {
+      "id": 58,
+      "question": "In the “12 Steps for Usability Testing,” why are “Post-Session Debriefs” recommended immediately after each test session?",
+      "options": {
+        "A": "To calculate the Net Promoter Score (NPS) while the participant is still present.",
+        "B": "To convince the participant to buy the product.",
+        "C": "To conduct a “memory dump” with observers while details are fresh, helping the team spot patterns and build shared understanding before formal analysis.",
+        "D": "To criticize the participant’s performance and teach them how to use the product correctly."
+      },
+      "correct": "C",
+      "explanation": "Post‑Session Debrief — memory dump команды, пока детали свежи."
+    },
+    {
+      "id": 59,
+      "question": "In the context of “Think-Time UX,” what is the “Background Imperative” (Design Pattern 14) regarding long-running tasks?",
+      "options": {
+        "A": "The system should automatically change the background color to indicate a busy state.",
+        "B": "Any task taking longer than a few seconds must be backgroundable, allowing the user to multitask without a modal dialog blocking the interface.",
+        "C": "The AI should perform all pre-computation in the background before the user initiates a task.",
+        "D": "Users should be forced to watch a background animation to maintain engagement during the wait."
+      },
+      "correct": "B",
+      "explanation": "Любая задача > несколько секунд должна быть backgroundable — без блокирующих модалок."
+    },
+    {
+      "id": 60,
+      "question": "According to the analysis of “Declining ROI From UX Design Work,” why has the return on investment for usability projects dropped significantly since the dot-com era?",
+      "options": {
+        "A": "Because user research has become more expensive due to inflation.",
+        "B": "Because AI has made users more tolerant of bad design.",
+        "C": "Because the field has achieved “victory”: the low-hanging fruit of terrible design has been picked, and most interfaces now meet a baseline of decent usability, meaning further improvements yield smaller marginal gains.",
+        "D": "Because companies are investing too much in quantitative testing rather than qualitative testing."
+      },
+      "correct": "C",
+      "explanation": "Большинство ужасного UX исчезло → дальнейшие улучшения дают меньший ROI."
+    },
+    {
+      "id": 61,
+      "question": "In the study of “AI Jobs” by researchers at the University of Oxford, what was the net effect of AI on the job market between 2018 and 2023?",
+      "options": {
+        "A": "A net decrease in jobs, as AI replaced more workers than it aided.",
+        "B": "A net positive increase, as the growth in jobs requiring skills complementary to AI (which saw rising wages) outpaced the decline in jobs with skills substitutable by AI.",
+        "C": "No net change, as job losses in customer service were exactly offset by gains in software engineering.",
+        "D": "A polarization effect where mid-level jobs disappeared, leaving only low-pay and high-pay roles."
+      },
+      "correct": "B",
+      "explanation": "Рост профессий, дополняющих AI, превысил падение заменяемых."
+    },
+    {
+      "id": 62,
+      "question": "When testing the viability of a UI metaphor, what is the “One-Sentence Test”?",
+      "options": {
+        "A": "Can the metaphor be described in a single line of code?",
+        "B": "Can users describe the interface’s function in one sentence after using it for 10 seconds?",
+        "C": "Can you explain the metaphor’s value in one sentence and demonstrate it in one gesture?",
+        "D": "Can the metaphor be translated into any language using only one sentence?"
+      },
+      "correct": "C",
+      "explanation": "One‑Sentence Test: объяснить ценность метафоры одной фразой и показать одним жестом."
+    },
+    {
+      "id": 63,
+      "question": "In the “Form Length Paradox,” why do longer forms sometimes achieve higher conversion rates than shorter ones?",
+      "options": {
+        "A": "Because longer forms confuse users into submitting data they didn’t intend to share.",
+        "B": "Because form completion is a function of the user’s motivation versus the perceived friction; if the value of the outcome is high, users accept the friction of a longer form as legitimate.",
+        "C": "Because longer forms appear more authoritative and trustworthy.",
+        "D": "Because users enjoy the gamification of filling out many fields."
+      },
+      "correct": "B",
+      "explanation": "Если ценность результата высока, пользователи принимают длинные формы как легитимное трение."
+    },
+    {
+      "id": 64,
+      "question": "In the economic analysis of Transformative AI, what does the “Adaptive Buffer” index measure?",
+      "options": {
+        "A": "The amount of memory an AI agent needs to retain context.",
+        "B": "The financial and skill-based resilience of workers to withstand displacement by AI, revealing that some high-exposure roles are actually better positioned to adapt.",
+        "C": "The time delay between an AI’s training cut-off and deployment.",
+        "D": "The buffer of inventory companies must hold to survive supply chain disruptions."
+      },
+      "correct": "B",
+      "explanation": "Adaptive Buffer измеряет устойчивость работников к замещению AI."
+    },
+    {
+      "id": 65,
+      "question": "In the context of “Slow AI“ design, what is the purpose of visualizing “Salvage Value”?",
+      "options": {
+        "A": "To show users how much money they saved.",
+        "B": "To estimate the resale value of hardware.",
+        "C": "To gamify the experience.",
+        "D": "To combat the sunk cost fallacy by showing what can be saved or reused if the user stops a flawed long-running process."
+      },
+      "correct": "D",
+      "explanation": "Salvage Value помогает бороться с sunk cost fallacy, показывая, что можно сохранить при остановке процесса."
+    },
+    {
+      "id": 66,
+      "question": "Why are “AI-Native” startups, as described by Y Combinator, changing the role of software engineers to “Product Engineers”?",
+      "options": {
+        "A": "Because AI writes 95% of the code, shifting engineers toward product-level responsibilities across the entire value flow.",
+        "B": "Because the title “Software Engineer” is outdated.",
+        "C": "Because engineers no longer write code at all.",
+        "D": "Because startups cannot afford product managers."
+      },
+      "correct": "A",
+      "explanation": "AI пишет большую часть кода → инженеры становятся product‑engineers, отвечающими за весь value‑flow."
+    },
+    {
+      "id": 67,
+      "question": "When deciding between showing an inactive control in a muted color versus hiding it entirely, why is hiding generally considered the worse option?",
+      "options": {
+        "A": "Because it makes the interface look empty.",
+        "B": "Because it causes “Context Loss,” making users think the feature doesn’t exist or they are in the wrong place.",
+        "C": "Because it is harder to code.",
+        "D": "Because users cannot click it to see an error message."
+      },
+      "correct": "B",
+      "explanation": "Скрытие вызывает context loss: пользователь думает, что функции нет или он не там."
+    },
+    {
+      "id": 68,
+      "question": "In the categorization of Prompt Augmentation features, what distinguishes “Intent Clarification” features?",
+      "options": {
+        "A": "They add decorative styles.",
+        "B": "They help users express their true goal when the original prompt is unclear or incomplete.",
+        "C": "They allow users to select from a gallery of images.",
+        "D": "They translate prompts into different languages."
+      },
+      "correct": "B",
+      "explanation": "Intent Clarification помогает уточнить намерение, когда исходный промпт неполный."
+    },
+    {
+      "id": 69,
+      "question": "In the “Mammoth Hunter” analogy for the AI career transition, what does the “Mammoth Hunter” represent?",
+      "options": {
+        "A": "The new AI agent.",
+        "B": "The legacy UX professional whose handcrafted pre-AI skills are becoming obsolete in the new era of AI abundance.",
+        "C": "The aggressive startup founder.",
+        "D": "A slow-moving enterprise company."
+      },
+      "correct": "B",
+      "explanation": "«Охотник на мамонтов» — специалист старой школы, чьи ручные навыки теряют ценность."
+    },
+    {
+      "id": 70,
+      "question": "As traditional user interfaces dissolve into AI agents, the discipline of UX design is predicted to morph into something most resembling which existing field?",
+      "options": {
+        "A": "Service Design: mapping actors, backstage processes, and touchpoints to ensure coherence even when the plumbing is invisible.",
+        "B": "Graphic Design.",
+        "C": "Industrial Design.",
+        "D": "Print Design."
+      },
+      "correct": "A",
+      "explanation": "UX → Service Design: работа с актёрами, backstage и потоками, когда UI растворяется."
+    }
+    ]
+}
