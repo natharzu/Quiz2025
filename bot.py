@@ -7,6 +7,10 @@ import random
 import telegram
 print("PTB VERSION:", telegram.__version__)
 
+import telegram.ext
+print("MODULE PATH:", telegram.ext.__file__)
+
+
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
