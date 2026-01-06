@@ -1,6 +1,8 @@
+import os
 import json
 import random
 from datetime import time
+
 from telegram import (
     Update,
     InlineKeyboardButton,
@@ -14,10 +16,24 @@ from telegram.ext import (
 )
 
 # -----------------------------
+# READ TOKEN SAFELY
+# -----------------------------
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+if not BOT_TOKEN:
+    raise RuntimeError(
+        "❌ BOT_TOKEN is missing! "
+        "Добавь переменную окружения BOT_TOKEN в Railway → Variables."
+    )
+
+# Маскируем токен в логах
+masked = BOT_TOKEN[:6] + "..." if len(BOT_TOKEN) > 6 else BOT_TOKEN
+print(f"🔐 BOT_TOKEN detected: {masked}")
+
+# -----------------------------
 # CONFIG
 # -----------------------------
-BOT_TOKEN = "YOUR_TOKEN_HERE"
-CHANNEL_ID = -1000000000000   # твой канал
+CHANNEL_ID = -1000000000000   # ← замени на ID твоего канала
 JSON_FILE = "JNQuiz2025.json"
 
 # -----------------------------
@@ -32,12 +48,10 @@ state = {"index": 0}
 # SEND QUIZ WITH INLINE BUTTONS
 # -----------------------------
 async def send_quiz(context: ContextTypes.DEFAULT_TYPE, q):
-    # Формируем текст вопроса
     text = f"❓ *{q['question']}*\n\n"
     for key, value in q["options"].items():
         text += f"*{key})* {value}\n"
 
-    # Кнопки A/B/C/D
     keyboard = [
         [
             InlineKeyboardButton("A", callback_data="answer|A"),
@@ -62,7 +76,7 @@ async def handle_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
 
     user_choice = query.data.split("|")[1]
-    q = questions[state["index"] - 1]  # последний отправленный вопрос
+    q = questions[state["index"] - 1]
     correct = q["correct"]
 
     if user_choice == correct:
@@ -72,7 +86,6 @@ async def handle_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     reply += f"\n\nℹ️ {q['explanation']}"
 
-    # Убираем кнопки
     await query.edit_message_reply_markup(None)
     await query.message.reply_text(reply, parse_mode="Markdown")
 
@@ -112,15 +125,13 @@ async def daily_quiz(context: ContextTypes.DEFAULT_TYPE):
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
 
-    # Команды
     app.add_handler(CommandHandler("start", start_quiz))
     app.add_handler(CommandHandler("next", next_question))
     app.add_handler(CommandHandler("random", random_question))
 
-    # Ответы на кнопки
     app.add_handler(CallbackQueryHandler(handle_answer, pattern="^answer"))
 
-    # Ежедневные 10 вопросов (в 10:00 UTC → 12:00 Oslo)
+    # Daily quiz at 10:00 UTC (12:00 Oslo)
     app.job_queue.run_daily(
         daily_quiz,
         time=time(10, 0)
