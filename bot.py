@@ -4,6 +4,10 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import os
 import random
 
+import telegram
+print("PTB VERSION:", telegram.__version__)
+
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_ID = os.getenv("CHANNEL_ID")
 
