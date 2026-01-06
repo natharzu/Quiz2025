@@ -11,7 +11,7 @@
       "options": {
         "A": "To provide a log of technical errors for debugging purposes.",
         "B": "To force the user to restart the task if they have been away for too long.",
-        "C": "To help to reconstruct mental model and context by summarizing intent, decisions, and current status",
+        "C": "To help the user reconstruct their mental model and context by summarizing the original intent, key decisions made, and current status.",
         "D": "To display a simple progress bar indicating the percentage of completion."
       },
       "correct": "C",
